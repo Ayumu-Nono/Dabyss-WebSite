@@ -1,4 +1,4 @@
-# Dabyss WwbSite
+# Dabyss WebSite
 
 Website of Dabyss Project.
 
