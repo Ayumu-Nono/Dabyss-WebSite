@@ -9,7 +9,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
-<body style="background-color: #006766;">
+<body style="background-color: snow;">
 <div class="container">
     <!-- color code -->
     <!-- base color #006766 -->
@@ -18,7 +18,8 @@
     
     <!-- navigation var start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Dabyss</a>
+    <a class="navbar-brand" href="#">
+        <img class="m-1" src="{% static 'img/logo_Dabyss.png' %}" alt="top_logo" width="30px">Dabyss</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -40,7 +41,6 @@
     <!-- navigation var end  -->
 
 
-    <img src="{% static 'img/logo_Dabyss.png' %}" alt="top_logo">
     
     
     <div class="row">
@@ -57,7 +57,71 @@
 </div>
 </body>
 
-<footer>
-    <div class=""></div>
-</footer>
-</html>
+
+<!-- Footer -->
+<footer class="page-footer font-small indigo" style="background-color: #006766; ">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: snow;">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" style="color: snow;">Home</a>
+            </li>
+            <li>
+              <a href="#!" style="color: snow;">Blog</a>
+            </li>
+            <li>
+              <a href="#!" style="color: snow;">Games</a>
+            </li>
+            <li>
+              <a href="#!" style="color: snow;">Contact</a>
+            </li>
+          </ul>
+  
+        </div>
+
+        <!-- Grid column -->
+        <div class="col-md mx-auto">
+  
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: snow;">SNS</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" style="color: snow;">LINE</a>
+              </li>
+              <li>
+                <a href="#!" style="color: snow;">Twitter</a>
+              </li>
+              <li>
+                <a href="#!" style="color: snow;">note</a>
+              </li>
+            </ul>
+    
+          </div>
+  
+
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="color: snow;">© 2020 Copyright:
+      <p style="color: snow;">Dabyss</p>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer --></html>
