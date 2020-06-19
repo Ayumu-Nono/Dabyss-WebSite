@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
+{% load markdownx %}
 
 {% block content %}
 記事
 {% for blog in object_list %}
 <h5>{{ blog.title }}</h5>
+<p>{{ blog.text | markdown_to_html }}</p>
 {% endfor %}
 
 {% endblock %}
