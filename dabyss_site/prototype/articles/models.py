@@ -17,6 +17,7 @@ class BlogArticle(models.Model):
     summary = models.TextField('概要', blank=False)
     text = MarkdownxField('本文', help_text='Markdown形式で書いてください。')
     date = models.DateTimeField(blank=False)
+    sumnail = models.ImageField(upload_to='blog_sumnail/')
 
     def __str__(self):
         return self.title
@@ -27,6 +28,7 @@ class GamesArticle(models.Model):
     summary = models.TextField('概要', blank=False)
     text = MarkdownxField('本文', help_text='Markdown形式で書いてください。')
     date = models.DateTimeField(blank=False)
+    sumnail = models.ImageField(upload_to='game_sumnail/')
 
     def __str__(self):
         return self.title
