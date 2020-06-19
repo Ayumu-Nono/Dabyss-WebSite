@@ -14,6 +14,12 @@ class BlogListView(ListView):
     pagenate_by = 10
 
 
+class BlogDetailView(DetailView):
+    template_name = "blog/detailview.html"
+    model = BlogArticle
+    context_object_name = 'blog'
+
+
 class GameListView(ListView):
     template_name = "games/listview.html"
     model = GamesArticle
