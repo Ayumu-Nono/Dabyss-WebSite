@@ -32,3 +32,4 @@ class GamesArticle(models.Model):
         return self.title
 
 
+
