@@ -1,6 +1,6 @@
 from django.db import models
-from django.utils import timezone
 from markdownx.models import MarkdownxField
+
 
 class HomeArticle(models.Model):
     title = models.CharField(max_length=40)
@@ -17,7 +17,9 @@ class BlogArticle(models.Model):
     summary = models.TextField('概要', blank=False)
     text = MarkdownxField('本文', help_text='Markdown形式で書いてください。')
     date = models.DateTimeField(blank=False)
-    sumnail = models.ImageField(upload_to='blog_sumnail/')
+    sumnail = models.ImageField(
+        upload_to='blog_sumnail/',
+        default="logo_Dabyss.png")
 
     def __str__(self):
         return self.title
@@ -28,7 +30,9 @@ class GamesArticle(models.Model):
     summary = models.TextField('概要', blank=False)
     text = MarkdownxField('本文', help_text='Markdown形式で書いてください。')
     date = models.DateTimeField(blank=False)
-    sumnail = models.ImageField(upload_to='game_sumnail/')
+    sumnail = models.ImageField(
+        upload_to='game_sumnail/',
+        default="logo_Dabyss.png")
 
     def __str__(self):
         return self.title

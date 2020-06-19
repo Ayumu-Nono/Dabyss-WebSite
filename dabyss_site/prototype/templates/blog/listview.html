@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+記事
+{% for blog in object_list %}
+<h5>{{ blog.title }}</h5>
+{% endfor %}
+
+{% endblock %}
